@@ -1,2 +1,75 @@
 
-body{background: linear-gradient(to right, #0072ff, #00c6ff);} 
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+}
+
+.right ol {
+  display: table;
+  margin: 0 auto;
+  position: right;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+
+
+#b1 {
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px;
+    border-radius: 25px;
+}
+
+#res {
+    background-color: green;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px;
+    border-radius: 25px;
+}
+
+#sub {
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px;
+    border-radius: 55px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  padding: 15px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+
+#BG {
+    height: 1000px;
+    background: linear-gradient(to bottom, #00c6ff, #0072ff);
+}
