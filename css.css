@@ -1,19 +1,2 @@
 
-
-h1 {
-    color: white;
-    text-align: center;
-}
-
-h2 {
-	color: white;
-	text-align: center;
-}
-
-.right ol {
-  display: grid;
-  margin: 0 auto;
-  position: center;
-  top: 50%;
-
-}
+body{background: linear-gradient(to right, #0072ff, #00c6ff);} 
