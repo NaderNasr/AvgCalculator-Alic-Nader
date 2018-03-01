@@ -1,63 +1,69 @@
-  $(document).ready(function(){
+  
 
+  $(document).ready(function(){
+   
 
     var sum=0
-
-    $("#b1").click(function(){
-
-      var m=parseInt(($("#"+num).val()))
-      conuter();
-      var text = $("<label> Grade # "+num+" "+" "+" </label><input type='text' id='"+num+"' > <br></br>")
-     
-      sum=sum+m
-      text.appendTo("body");
+    var num = 0
+    var k=0
+    
      
 
-    });
+      function counter(){
+      num = num + 1
+        if(num>15){
+          alert("15 Subjects Allowed");
+            return
+      }
+        return num;
+      }
 
-    $("#sub").click(function(){
-      var text2 = $("<label> Subject "+num+" "+" "+" </label><input type='text' id='"+num+"' > <br></br>")
-      text2.appendTo("body");
-    });
 
       $("#res").click(function(){
+       
+          // num = num - 1
+            //sum = sum 
+            // alert(k)
+              alert(sum/num)
+                location.reload()
 
-        alert(sum/num)
-       // text.appendTo("body");
       });
 
+      $("#b1").click(function(){
+       
+      // var m = parseInt(($("#"+ num).val()))
+      counter();
+      var text = $("<label> Grade # "+num+" "+" "+" </label><input type='text' id='"+num+"' > <br></br>")
+       text.appendTo("body")
+        $('#'+num).keyup(function(){
+             k=parseInt(($("#"+ num).val()))
+             console.log(k)
+              sum = sum+k
+              })
+     // $('#'+num).keypress(function() {
+     // var k=parseInt(($("#"+ num).val()))
+     //  })
 
-        var num=0
-        function conuter(){
-	      num++
-        if(num>15){
-        alert("15 Subjects Allowed");
-        return
-        }
-        return num
-        }
+    
+           console.log(sum)
 
-
-
-
-
-
-
-
-
-
-
-
+     ;
+    });
 
 
+ 
+     
+     
+
+    // $("#sub").click(function(){
+    //   var text2 = $("<label> Subject "+num+" "+" "+" </label><input type='text' id='"+num+"' > <br></br>")
+    //   text2.appendTo("body");
+    // });
 
 
 
+        // function counting (){
 
-
-
-
-
-
+      //}
 
 });

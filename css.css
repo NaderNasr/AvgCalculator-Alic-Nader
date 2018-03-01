@@ -42,7 +42,7 @@ h2 {
     border-radius: 25px;
 }
 
-#sub {
+/*#sub {
     background-color: black;
     color: white;
     padding: 10px 10px;
@@ -52,7 +52,7 @@ h2 {
     margin: 10px 10px;
     border-radius: 55px;
 }
-
+*/
 
 .grid-container {
   display: grid;
