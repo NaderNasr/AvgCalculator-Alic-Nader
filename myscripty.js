@@ -1,12 +1,11 @@
   
 
   $(document).ready(function(){
-   
+   var t=this
 
     var sum=0
     var num = 0
     var k=0
-    
      
 
       function counter(){
@@ -21,9 +20,9 @@
 
       $("#res").click(function(){
        
-          // num = num - 1
-            //sum = sum 
-            // alert(k)
+          num = num - 1
+            sum = sum 
+          //  alert(k)
               alert(sum/num)
                 location.reload()
 
@@ -31,27 +30,21 @@
 
       $("#b1").click(function(){
        
-      // var m = parseInt(($("#"+ num).val()))
+      var m = parseInt(($("#"+ num).val()))
       counter();
       var text = $("<label> Grade # "+num+" "+" "+" </label><input type='text' id='"+num+"' > <br></br>")
-       text.appendTo("body")
+
         $('#'+num).keyup(function(){
              k=parseInt(($("#"+ num).val()))
-             console.log(k)
-              sum = sum+k
-              })
-     // $('#'+num).keypress(function() {
-     // var k=parseInt(($("#"+ num).val()))
-     //  })
 
-    
-           console.log(sum)
+     })
 
-     ;
+     sum = sum+m
+      text.appendTo("body");
     });
 
 
- 
+    
      
      
 
