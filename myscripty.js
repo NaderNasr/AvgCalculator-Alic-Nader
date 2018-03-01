@@ -8,16 +8,22 @@
       var m=parseInt(($("#"+num).val()))
       conuter();
       var text = $("<label> Grade # "+num+" "+" "+" </label><input type='text' id='"+num+"' > <br></br>")
-      var text2 = $("<label> Subject "+num+" "+" "+" </label><input type='text' id='"+num+"' > <br></br>").style('position': 'center')
+     
       sum=sum+m
       text.appendTo("body");
-      text2.appendTo("body");
+     
 
     });
+
+    $("#sub").click(function(){
+      var text2 = $("<label> Subject "+num+" "+" "+" </label><input type='text' id='"+num+"' > <br></br>")
+      text2.appendTo("body");
+    });
+
       $("#res").click(function(){
 
         alert(sum/num)
-        text.appendTo("body");
+       // text.appendTo("body");
       });
 
 
